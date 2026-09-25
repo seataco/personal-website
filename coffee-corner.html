@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Coffee corner — hobbies and personal notes from {{name}}.">
-  <title>Coffee corner — {{name}}</title>
+  <title>Coffee Corner — {{name}}</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,20 +20,34 @@
 
           <div class="coffee-heading">
             <div>
-              <h1>Coffee corner</h1>
+              <h1>Coffee Corner</h1>
             </div>
           </div>
 
           <p class="lede">
             This is just an extra corner for me to share some hobbies, pictures and other such stuff outside of the main 
-            portfolio!
+            portfolio! 
           </p>
 
+          <br>
+          <p>For today, here's a collection of pictures from a recent trip to San Francisco!</p>
+
+          <section class="slideshow" aria-roledescription="carousel" aria-label="San Francisco trip photos">
+            <div class="slideshow-frame">
+              <button type="button" class="slideshow-nav slideshow-nav--prev" aria-label="Previous photo">‹</button>
+              <div class="slideshow-viewport">
+                <div class="slideshow-track"></div>
+              </div>
+              <button type="button" class="slideshow-nav slideshow-nav--next" aria-label="Next photo">›</button>
+            </div>
+            <p class="slideshow-caption">
+              Pictures from a recent trip to San Francisco
+              <span class="slideshow-counter" aria-live="polite"></span>
+            </p>
+            <p class="slideshow-photo-caption" aria-live="polite" hidden></p>
+          </section>
 
 
-          <p class="coffee-back">
-            <a href="index.html">← Back to the portfolio file</a>
-          </p>
         </main>
       </div>
     </div>
