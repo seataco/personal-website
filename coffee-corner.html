@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coffee corner — hobbies and personal notes from {{name}}.">
+  <title>Coffee corner — {{name}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="folder">
+      <div data-include="partials/header.html"></div>
+      <div class="folder-body">
+        <main class="paper coffee-paper">
+          <header class="letterhead">
+            <p class="letterhead-name">{{name}}</p>
+            <p class="letterhead-meta">{{location}}<span class="letterhead-dot"> · </span><a href="mailto:{{email}}">{{email}}</a></p>
+          </header>
+
+          <div class="coffee-heading">
+            <div>
+              <h1>Coffee corner</h1>
+            </div>
+          </div>
+
+          <p class="lede">
+            This is just an extra corner for me to share some hobbies, pictures and other such stuff outside of the main 
+            portfolio!
+          </p>
+
+
+
+          <p class="coffee-back">
+            <a href="index.html">← Back to the portfolio file</a>
+          </p>
+        </main>
+      </div>
+    </div>
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/includes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

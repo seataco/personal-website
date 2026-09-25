@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact {{name}} — get in touch for collaborations or opportunities.">
+  <title>Contact — {{name}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="folder">
+      <div data-include="partials/header.html"></div>
+      <div class="folder-body">
+        <main class="paper">
+          <header class="letterhead">
+            <p class="letterhead-name">{{name}}</p>
+            <p class="letterhead-meta">{{location}}<span class="letterhead-dot"> · </span><a href="mailto:{{email}}">{{email}}</a></p>
+          </header>
+
+          <h1>Contact</h1>
+          <p class="lede">
+            Have a question, opportunity, or just want to say hi? I'd love to hear from you.
+          </p>
+
+          <div class="contact-layout">
+            <div class="contact-info">
+              <div class="contact-item">
+                <h3>Email</h3>
+                <a href="mailto:{{email}}">{{email}}</a>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">
+                <h3>Elsewhere</h3>
+                <p>
+                  <a href="{{github}}" target="_blank" rel="noopener noreferrer">GitHub</a><br>
+                  <a href="{{linkedin}}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/includes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

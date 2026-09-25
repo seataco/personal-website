@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About {{name}} — background, skills, and interests.">
+  <title>About — {{name}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="folder">
+      <div data-include="partials/header.html"></div>
+      <div class="folder-body">
+        <main class="paper">
+          <header class="letterhead">
+            <p class="letterhead-name">{{name}}</p>
+            <p class="letterhead-meta">{{location}}<span class="letterhead-dot"> · </span><a href="mailto:{{email}}">{{email}}</a></p>
+          </header>
+
+
+          <h1>About me</h1>
+          <p class="lede">A little context on who I am and what I care about building.</p>
+          
+          <br>
+
+          <div class="about-layout">
+            <div class="photo-frame" aria-hidden="true">Photo<br>to follow</div>
+
+            <div class="about-content">
+              <p>
+                Hi! I'm Sean, a graduate of the University of Connecticut with a degree in Linguistics
+                and Philosophy and a minor in Computer Science.
+              </p>
+              <p>
+                I've tinkered with tech my entire life, and got a multidisciplinary education to support
+                bringing exciting innovations to as many people as I can.
+              </p>
+              <p>
+                I've worked for many people as an independent tech contractor offering unique solutions
+                to their unique problems. Additionally, I have worked independently in game development
+                and video editing for several years, improving my suite of computer-focused strengths
+                and continuing to work towards being as well-rounded a person and worker as I can be.
+              </p>
+              <p>
+                Game development is my dream career, but helping people learn — whether that be through
+                teaching others general tech knowledge, foreign language learning, better writing
+                techniques, or any number of other ways — is an equally great passion of mine.
+              </p>
+              <p>
+                Whether it be a career in the tech landscape or a human-focused role, I'd be thrilled
+                to work with you in making the world happier!
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div data-include="partials/footer.html"></div>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/includes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
